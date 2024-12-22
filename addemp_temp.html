@@ -1,0 +1,27 @@
+{% extends "home.html" %}
+{% block content%}
+<form action="/addemp" method="post">
+  <table class="table table-success table-striped">
+    <tr>
+      <td>EmployeeNo</td>
+      <td><input type="text" name="empno"></td>
+    </tr>
+    <tr>
+      <td>EmployeeName</td>
+      <td><input type="text" name="ename"></td>
+    </tr>
+    <tr>
+      <td>EmployeeJob</td>
+      <td><input type="text" name="job"></td>
+    </tr>
+    <tr>
+      <td>EmployeeSalary</td>
+      <td><input type="text" name="sal"></td>
+    </tr>
+    <tr>
+      <td><button type="submit" class="btn btn-primary">Create</button></td>
+      <td></td>
+    </tr>
+  </table>
+</form>
+{% endblock%}

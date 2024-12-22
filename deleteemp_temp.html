@@ -1,0 +1,15 @@
+{%extends "home.html"%}
+{%block content%}
+<form action="/deleteemp" method="POST">
+<table class="table table-success table-striped">
+  <tr>
+    <td>EmployeeNo</td>
+    <td><input type="text" name="empno"></td>
+  </tr>
+  <tr>
+    <td><button type="submit" class="btn btn-primary">Delete</button></td>
+    <td></td>
+  </tr>
+</table>
+</form>
+{%endblock%}
